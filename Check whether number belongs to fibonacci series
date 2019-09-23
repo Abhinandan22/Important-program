@@ -1,0 +1,15 @@
+int firstTerm = 0,secondTerm=1,thirdTerm=0;
+        
+        while(thirdTerm < n){
+            
+            thirdTerm = firstTerm + secondTerm;
+            firstTerm = secondTerm;
+            secondTerm = thirdTerm;
+        }
+        
+        if(thirdTerm == n)
+            return true;
+        else
+            return false;
+        
+        
